@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+
+	setlocale(LC_ALL,"RUS");
+	 
+	/* int* pi, i = 5;
+	float* pf, f = 2.1f;
+	printf("%lu\n", sizeof(pi));
+	printf("%lu\n", sizeof(pf));*/
+
+	/* float PI = 3.14159, * p1, * p2;
+	p1 = p2 = &PI;
+	printf("По адресу p1=%p хранится *p1=%g\n", p1,*p1);
+	printf("По адресу p2=%x хранится *p2=%g\n", p2,*p2);*/
+
+	/*int* pa, x = 5;
+	pa = &x;
+	printf("По адресу %p хранится *ptr=%g\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%lf\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%c\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%f\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%lu\n", pa, *pa);
+	puts('++');
+	pa++;
+	printf("По адресу %p хранится *ptr=%g\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%lf\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%c\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%f\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%lu\n", pa, *pa);
+	puts('--');
+	pa--;
+	printf("По адресу %p хранится *ptr=%g\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%lf\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%c\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%f\n", pa, *pa);
+	printf("По адресу %p хранится *ptr=%lu\n", pa, *pa);*/
+
+
+	float array[4]={1.1, 2.2, 3.3, 4.4};
+	float *ptr_a;
+	printf("%p, %p, %p", array, &array[0], &array);
+	
+}
